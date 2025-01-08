@@ -1,0 +1,22 @@
+{
+  "name": "phonebook_backend",
+  "version": "1.0.0",
+  "description": "backend content",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "server": "json-server -p3001 --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philip Eberechi Chima",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "middleware": "^1.0.0",
+    "mongoose": "^8.9.3",
+    "morgan": "^1.10.0"
+  }
+}
