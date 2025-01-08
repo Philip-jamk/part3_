@@ -95,8 +95,11 @@ app.delete("/api/persons/:id", (request, response, next) => {
     .catch((error) => next(error));
 });
 
+// app.get("/", (request, response) => {
+//   response.send("<h1>Hello World!</h1>");
+// });
 app.get("/", (request, response) => {
-  response.send("<h1>Hello World!</h1>");
+  response.sendFile("index.html");
 });
 
 // Adding a response for Info page
