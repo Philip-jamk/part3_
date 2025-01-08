@@ -99,7 +99,7 @@ app.delete("/api/persons/:id", (request, response, next) => {
 //   response.send("<h1>Hello World!</h1>");
 // });
 app.get("/", (request, response) => {
-  response.sendFile("index.html");
+  response.sendFile("index.html", { root: "dist" });
 });
 
 // Adding a response for Info page
