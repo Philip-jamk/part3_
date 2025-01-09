@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "server": "json-server -p3001 --watch db.json",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Philip Eberechi Chima",
@@ -18,5 +19,11 @@
     "middleware": "^1.0.0",
     "mongoose": "^8.9.3",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@stylistic/eslint-plugin-js": "^2.12.1",
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0"
   }
 }
